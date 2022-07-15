@@ -1,9 +1,11 @@
 if opcion==2:
             print(" ")
+            print("                     Tabla de Amortizacion")
+            print(" ")
             print("     Interes Anual: ",interesAnual,"%","\t\t","Monto: $", prestamo)
             print("         Plazo meses: ", tiempo)
             print("")
-            print("{:^10}{:^10}{:^12}{:^10}".format("NÂ°","Cuota","Interes","Amortizacion","Saldo"))
+            print("{:^10}{:^10}{:^12}{:^10}{:^10}".format("N0°","Cuota","Interes","Amortizacion","Saldo"))
             nuevoSaldo = prestamo
             for i in range(tiempo+1):
                 if(i==0):
