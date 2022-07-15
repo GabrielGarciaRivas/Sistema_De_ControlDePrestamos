@@ -1,0 +1,14 @@
+ print("")
+    print("     Interes Anual: ",interesAnual,"%","\t\t","Monto: $", prestamo)
+    print("         Plazo meses: ", tiempo)
+    print("")
+    print("{:^10}{:^10}{:^12}{:^10}".format("N°","Cuota","Interes","Amortizacion","Saldo"))
+    nuevoSaldo = prestamo
+    for i in range(tiempo+1):
+        if(i==0):
+            print("{:^10}{:^10}{:^12}{:^10}".format(i," "," "," ",prestamo))
+        else:
+            pagoInteres = nuevoSaldo*interesMensual
+            amorzacion= cuota-pagoInteres
+            nuevoSaldo = nuevoSaldo-amorzacion
+            print("{:^10d}{:^10.2f}{:^10.2f}{:^12.2f}{:^10.2f}".f1ormat(i,cuota,pagoInteres,amorzacion,nuevoSaldo))
