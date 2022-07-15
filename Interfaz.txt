@@ -1,0 +1,17 @@
+import math
+
+print ("Bienvenido al Banco \n\
+    Que deseas hacer?\n\
+    1.- Solicitar un prestamo\n\
+    2.- Imprimir tabla de amortizacion\n\
+    3.- Pagar el prestamo\n\
+    4.- Cancelacion de Prestamos\n\
+    5.- Consulta de prestamo \n\
+    6.- Calcular cuotas, pago total y fechas de pagos")
+
+print ("    Mas opciones... \n\
+    7.Imprimir estado de cuenta del prestamo \n\
+    8.Historial de Pago \n\
+    ")
+
+opcion=int(input())
