@@ -1,0 +1,9 @@
+if opcion==3:
+            print("tu pago de este mes es de: ", cuota)
+            opt = input("deseas saldar la cuota de este mes? (si/no)")
+
+            if opt == ("si"):
+                print("la deuda de este mes fue saldada")
+
+            if opt == ("no"):
+                print("la deuda de este mes no fue saldada")
