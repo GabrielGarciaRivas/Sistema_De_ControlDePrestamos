@@ -1,0 +1,14 @@
+if opcion==4:
+            print("Para cancelar el prestamo debes pagar:", prestamo)
+            opt = input("Deseas cancelar el prestamo? (si/no)")
+
+            if opt == ("si"):
+                print("El prestamo fue cancelado exitosamente")
+                prestamo = 0
+                tiempo = 0
+                interesAnual= 0
+
+                quit()
+
+            if opt == ("no"):
+                print("El prestamo no pudo ser cancelado")
