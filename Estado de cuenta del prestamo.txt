@@ -1,0 +1,17 @@
+if opcion==6:
+            print(" ")
+            print("                     Estado de cuenta")
+            print(" ")
+            print("     Interes Anual: ",interesAnual,"%","\t\t","Monto: $", prestamo)
+            print("         Plazo meses: ", tiempo)
+            print("")
+            print("{:^10}{:^10}{:^10}{:^10}".format("N0°","Cuota","Interes","Saldo"))
+            nuevoSaldo = prestamo
+            for i in range(tiempo+1):
+                if(i==0):
+                    print("{:^10}{:^10}{:^12}{:^10}".format(i," "," "," ",prestamo))
+                else:
+                    pagoInteres = nuevoSaldo*interesMensual
+                    amorzacion= cuota-pagoInteres
+                    nuevoSaldo = nuevoSaldo-amorzacion
+                    print("{:^10d}{:^10.2f}{:^10.2f}{:^10.2f}".format(i,cuota,pagoInteres,nuevoSaldo))
