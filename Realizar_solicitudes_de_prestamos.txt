@@ -1,1 +1,8 @@
-Hola
+if opcion==1:   
+            prestamo = float(input("Digite el monto del prestamo?"))
+            tiempo = int(input("Plazo de prestamo (meses)?"))
+            interesAnual = float(input("Interes anual a aplicar al prestamo?"))
+        #Interes Mensual
+        interesMensual = (interesAnual/12)/100
+        #Cuota
+        cuota = ((prestamo*interesMensual)/(1-(math.pow((1+interesMensual),(tiempo*-1)))))
