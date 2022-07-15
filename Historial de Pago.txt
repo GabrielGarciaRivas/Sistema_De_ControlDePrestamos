@@ -1,0 +1,12 @@
+if opcion==7:   
+        
+            mensualidad = cuota
+            total=0
+        
+            x = tiempo
+        
+            for i in range(x):
+                print("El pago de la mensualidad" + str(i+1) + "es: " + str(mensualidad))
+                total+=mensualidad
+                mensualidad*=2
+                print("El pago total es de: " + str(total))
